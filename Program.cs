@@ -90,3 +90,35 @@ string radius = Console.ReadLine();
 double r = Convert.ToDouble(radius);
 double circleArea = (r*r) * Math.PI;
 Console.WriteLine($"The area of a circle with radius {r} is {circleArea}");
+
+//loops and conditional statements are the same format as Java
+if (circleArea >= 15){
+    Console.WriteLine($"The area of the circle {circleArea} is greater than 15");
+}
+else{
+    Console.WriteLine($"The area of the circle {circleArea} is less than 15");
+}
+int counter = 6;
+//++ or -- increments the value by one either up or down respectively
+//do while will run the code of the while loop once and then if the the while statement
+//is true then it will enter the while loop, if not then it won't
+do{
+    counter++;
+    //conditional statements and loops can be nested within other loops
+    if(counter > 1){
+        Console.WriteLine($"This loop has run {counter} times");
+    }
+    else{
+        Console.WriteLine($"This loop has run {counter} time");
+    }
+}
+while (counter < 5);{
+    counter++;
+    //conditional statements and loops can be nested within other loops
+    if(counter > 1){
+        Console.WriteLine($"This loop has run {counter} times");
+    }
+    else{
+        Console.WriteLine($"This loop has run {counter} time");
+    }
+}
