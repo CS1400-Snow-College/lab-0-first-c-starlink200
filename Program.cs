@@ -71,7 +71,22 @@ Console.WriteLine($"The range of integers is {min} to {max}");
 //the number wraps so once you hit the max value it will start at the other end and continue
 int what = max + 100;
 Console.WriteLine($"An Example of overflow... {what}");
-//another numerical data type is the double which is approximately double the size of an int
+//another numerical data type is the double
 double doubleMax = double.MaxValue;
 double doubleMin = double.MinValue;
 Console.WriteLine($"the range of a double is {doubleMin} to {doubleMax}");
+
+//another numbercal data type is the decimal which allows for more precise decimal points
+double one = 1;
+double third = 3;
+Console.WriteLine(one/third);
+decimal uno = 1;
+decimal trace = 3;
+//the double goes to fewer decimal points than the decimal
+Console.WriteLine(uno/trace);
+Console.WriteLine();
+Console.WriteLine("Choose a radius of a cicle");
+string radius = Console.ReadLine();
+double r = Convert.ToDouble(radius);
+double circleArea = (r*r) * Math.PI;
+Console.WriteLine($"The area of a circle with radius {r} is {circleArea}");
