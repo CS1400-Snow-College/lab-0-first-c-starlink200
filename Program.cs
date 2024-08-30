@@ -149,3 +149,29 @@ for(int i = 0; i < 20; i++){
     }
 }
 Console.WriteLine(divisThree);
+
+//lists and collections
+var names = new List<string> { "caleb", "davis", "Felipe" };
+//var frank is just a representation of the of each items held in a list
+//in names is giving varr frank a location of the items choosing which list
+foreach (var frank in names){
+    Console.WriteLine($"Hello {frank.ToUpper()}!");
+}
+
+//.Add & .Remove allows items in a list to be inserted or removed
+Console.WriteLine();
+names.Add("Luke");
+names.Add("Kaelie");
+names.Remove("Filipe");
+foreach (var frank in names){
+    Console.WriteLine($"Hello {frank.ToUpper()}!");
+}
+//you can select an individual number using []
+Console.WriteLine($"My name is {names[0]}");
+//.Count is similar to .Length it returns the number of items in the list
+Console.WriteLine($"This list has {names.Count} names");
+
+var index = names.IndexOf("Felipe");
+if (index != -1){
+    Console.WriteLine($"The name {names[index]} is at index {index}");
+}
