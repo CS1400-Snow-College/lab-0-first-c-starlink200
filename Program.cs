@@ -122,3 +122,30 @@ while (counter < 5);{
         Console.WriteLine($"This loop has run {counter} time");
     }
 }
+
+//for loops run a specific number of iterations
+for(int i = 1; i < 6; i++){
+    Console.WriteLine($"Hello {aFriend} the counter is {i}");
+}
+Console.WriteLine("The program will now make a rectangle of * based on the dimensions you give it");
+Console.WriteLine("Choose a number of rows");
+string row = Console.ReadLine();
+Console.WriteLine("Choose a number of columsn");
+string column = Console.ReadLine();
+int rowNum = Convert.ToInt16(row);
+int columnNum = Convert.ToInt16(column);
+//for loops can be nested
+for(int i = 0; i < rowNum; i++){
+    for(int j = 0; j < columnNum; j++){
+        Console.Write("* ");
+    }
+    Console.WriteLine();
+}
+//using conditional statements within a for loop
+int divisThree = 0;
+for(int i = 0; i < 20; i++){
+    if( i % 3 == 0){
+        divisThree += i;
+    }
+}
+Console.WriteLine(divisThree);
